@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Acciones SEO aplicadas -->
+    <meta name="description" content="El Parchecito Rápido - Las mejores comidas rápidas. Pide tu orden en línea sin hacer filas.">
+    <title>Inicio | El Parchecito Rápido</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="Log_elparchecitorapido.webp" type="image/webp">
+</head>
+
+<body>
+    <!-- Encabezado con logo y Menú de Navegación -->
+    <header class="hero-header">
+        <div class="header-content">
+            <!-- Etiqueta para el Logo -->
+            <img src="Log_elparchecitorapido.webp" alt="Logo de El Parchecito Rápido" class="logo">
+            
+            <h1>El Parchecito Rápido</h1>
+        </div>
+        <nav>
+            <ul>
+                <!-- Vínculos que permiten pasar de una página a otra -->
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Nuestro Menú</a></li>
+                <li><a href="pedido.html">Haz tu Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section>
+            <h2>¡Bienvenidos a tu lugar favorito!</h2>
+            <p>En El Parchecito Rápido preparamos la mejor comida para que disfrutes con tus amigos o recargues energías después de una larga jornada de trabajo.</p>
+            
+            <!-- Lista desordenada requerida -->
+            <h3>¿Por qué elegirnos?</h3>
+            <ul>
+                <li>Ingredientes frescos y de la mejor calidad.</li>
+                <li>Atención súper rápida.</li>
+                <li>Sistema de pedidos en línea: pide, te llamamos y recoges.</li>
+            </ul>
+        </section>
+
+        <section class="carrusel-3d">
+            <h2>Conoce nuestros platos estrella</h2>
+            
+            <!-- Contenedor del Carrusel 3D -->
+            <div class="slider-container">
+                <!-- Botones de radio ocultos que controlan la magia -->
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+
+                <div class="cards">
+                    <!-- Plato 1 -->
+                    <label class="card" for="item-1" id="card-1">
+                        <img src="Hamburguesa_Index.webp" alt="Hamburguesa Triple">
+                        <div class="info">
+                            <h3>Hamburguesa Triple</h3>
+                            <p>Tres carnes, doble queso y tocineta. ¡Brutal!</p>
+                        </div>
+                    </label>
+
+                    <!-- Plato 2 -->
+                    <label class="card" for="item-2" id="card-2">
+                        <img src="Combo_PerroCaliente.webp" alt="Perro Caliente">
+                        <div class="info">
+                            <h3>Perro Callejero</h3>
+                            <p>Salchicha premium, queso, ripio y full salsas.</p>
+                        </div>
+                    </label>
+
+                    <!-- Plato 3 (Agrega una tercera imagen en tu carpeta) -->
+                    <label class="card" for="item-3" id="card-3">
+                        <img src="Combo_Salchipapa.webp" alt="Salchipapa Especial">
+                        <div class="info">
+                            <h3>Salchipapa Monumental</h3>
+                            <p>Papas a la francesa, salchicha, queso gratinado y tocineta.</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto y Redes -->
+        <section class="contacto-info">
+            <h2>Encuéntranos</h2>
+            <div class="contacto-container">
+                
+                <!-- Columna de Ubicación -->
+                <div class="info-item">
+                    <h3>📍 Nuestra Ubicación</h3>
+                    <p>Calle 45 # 12-34</p>
+                    <p>Barrio El Centro, Bogotá</p>
+                </div>
+
+                <!-- Columna de Contacto -->
+                <div class="info-item">
+                    <h3>📞 Escríbenos</h3>
+                    <p>WhatsApp: +57 300 123 4567</p>
+                    <p>pedidos@elparchecitorapido.com</p>
+                </div>
+
+                <!-- Columna de Redes Sociales -->
+                <div class="info-item">
+                    <h3>📱 Síguenos</h3>
+                    <div class="redes-links">
+                        <a href="#" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">Facebook</a>
+                        <a href="#" target="_blank">TikTok</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página requerido -->
+    <footer>
+        <p>&copy; 2026 El Parchecito Rápido. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

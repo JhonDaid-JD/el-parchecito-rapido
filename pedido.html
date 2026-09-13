@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Haz tu pedido en línea en El Parchecito Rápido y recoge sin hacer filas.">
+    <title>Haz tu Pedido | El Parchecito Rápido</title>
+    <link rel="icon" href="Log_elparchecitorapido.webp" type="image/webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado y Navegación -->
+    <header class="hero-header">
+        <div class="header-content">
+            <img src="Log_elparchecitorapido.webp" alt="Logo de El Parchecito Rápido" class="logo">
+            <h1>El Parchecito Rápido</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Nuestro Menú</a></li>
+                <li><a href="pedido.html">Haz tu Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal: Formulario de Pedidos -->
+    <main>
+        <section class="seccion-formulario">
+            <h2>Realiza tu Pedido</h2>
+            <p>Llena los datos para preparar tu orden. Te llamaremos cuando esté lista.</p>
+            
+            <!-- Formulario con validaciones HTML5 requeridas -->
+            <form id="formulario-pedido" class="form-neon">
+                
+                <!-- Campo 1: Texto con maxlength -->
+                <div class="grupo-form">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required maxlength="50" placeholder="Ej. Juan Pérez">
+                </div>
+
+                <!-- Campo 2: Número con min -->
+                <div class="grupo-form">
+                    <label for="telefono">Teléfono (Celular):</label>
+                    <input type="number" id="telefono" name="telefono" required min="3000000000" placeholder="Ej. 3001234567">
+                </div>
+
+                <!-- Campo 3: Select -->
+                <div class="grupo-form">
+                    <label for="plato">¿Qué deseas pedir?</label>
+                    <select id="plato" name="plato" required>
+                        <option value="">-- Selecciona un Combo --</option>
+                        <option value="Hamburguesa Triple">Hamburguesa Triple Callejera</option>
+                        <option value="Perro Especial">Perro Caliente Especial</option>
+                        <option value="Salchipapa">Salchipapa Monumental</option>
+                        <option value="Pizza">Pizza Pepperoni</option>
+                        <option value="Pentakill">Familiar: Combo Pentakill</option>
+                        <option value="Volumen">Familiar: Combo Fase de Volumen</option>
+                        <option value="Bestia">Familiar: Combo Bestia Callejera</option>
+                        <option value="Banquete">Familiar: Combo Banquete Pizzero</option>
+                    </select>
+                </div>
+
+                <!-- Campo 4: Fecha -->
+                <div class="grupo-form">
+                    <label for="fecha">Fecha de recogida:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <!-- Campo 5: Checkbox -->
+                <div class="grupo-form checkbox-group">
+                    <input type="checkbox" id="confirmacion" name="confirmacion" required>
+                    <label for="confirmacion">Confirmo que mi pedido es correcto y pasaré a recogerlo.</label>
+                </div>
+
+                <!-- Mensaje de error (oculto por defecto para JavaScript) -->
+                <div id="mensaje-error" class="mensaje-error"></div>
+
+                <button type="submit" class="btn-enviar">Enviar Pedido</button>
+            </form>
+            <!-- Mensaje de Éxito (Oculto por defecto) -->
+            <div id="mensaje-exito" class="mensaje-exito" style="display: none;">
+                <h3>✅ ¡Pedido realizado correctamente!</h3>
+                <p>Tu orden ya está en la cocina preparándose. Por favor, <strong>espera de 5 a 10 minutos</strong> para pasar a recogerlo al local.</p>
+                <button type="button" id="btn-nuevo-pedido" class="btn-enviar">Hacer otro pedido</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 El Parchecito Rápido. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
